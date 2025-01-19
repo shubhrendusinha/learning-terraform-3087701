@@ -79,7 +79,7 @@ resource "aws_security_group_rule" "blog_http_in"{
   security_group.id=aws_security_group.blog.id
 }
 
-esource "aws_security_group_rule" "blog_https_in"{
+resource "aws_security_group_rule" "blog_https_in"{
   type="ingress"
   from_port=443
   to_port=443
